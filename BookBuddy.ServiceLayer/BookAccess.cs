@@ -24,7 +24,7 @@ namespace BookBuddy.ServiceLayer {
 
         public async Task<IEnumerable<Book>> GetAllBooks() {
             List<Book> foundBooks = new List<Book>();
-            var fullUrl = $"{_serviceConnection.BaseUrl.TrimEnd('/')}/Book"; // Ensure this matches the API route
+            var fullUrl = $"{_serviceConnection.BaseUrl.TrimEnd('/')}/Book"; 
 
             if (_serviceConnection != null) {
                 try {

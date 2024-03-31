@@ -38,7 +38,7 @@ namespace BookBuddy_MVC {
                 builder.Services.AddTransient<IBookAccess, BookAccess>();
                 builder.Services.AddHttpClient("API", client =>
                 {
-                    client.BaseAddress = new Uri("https://localhost:7199/api/"); // Replace with your actual API base URL
+                    client.BaseAddress = new Uri("http://localhost:7199/api/"); // Replace with your actual API base URL
                 });
 
 
